@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettbutikk - Hjem</title>
+    <title>Nettbutikk: Handle De Beste Produktene Online</title>
+    <meta
+      name="description"
+      content="Handle våre mest populære produkter og kategorier. Kontakt oss for mer informasjon om vårt tilbud."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,9 +16,14 @@
       <div class="container">
         <nav class="navbar">
           <div class="search-bar-container">
-            <form class="search-bar-wrapper">
-              <input type="text" placeholder="søk her" class="search-bar" />
-              <button class="search-button">⌕</button>
+            <form class="search-bar-wrapper" aria-label="Search Form">
+              <input
+                type="text"
+                placeholder="Søk her"
+                class="search-bar"
+                aria-label="Search"
+              />
+              <button class="search-button" aria-label="Search">⌕</button>
             </form>
           </div>
           <ul class="nav-links">
@@ -25,9 +34,11 @@
             <li><a href="#contact">Kontakt oss</a></li>
           </ul>
           <div class="nav-icons">
-            <a href="#" class="icon">👤</a>
-            <a href="#" class="icon">♡</a>
-            <a href="checkout.html" class="icon">🛒</a>
+            <a href="#" class="icon" aria-label="User Profile">👤</a>
+            <a href="#" class="icon" aria-label="Wishlist">♡</a>
+            <a href="checkout.html" class="icon" aria-label="Shopping Cart"
+              >🛒</a
+            >
           </div>
         </nav>
       </div>
@@ -44,24 +55,38 @@
           Lorem ipsum dolor sit amet consectetur adipisicing eli ex <br />
           culpa possimus quis aliquam earum ipsam libero error
         </p>
-        <a href="#popular-products" class="banner-button">
+        <a
+          href="#popular-products"
+          class="banner-button"
+          aria-label="Read More About Popular Products"
+        >
           <span class="button-text">LES MER</span>
         </a>
-        <button class="banner-arrow left">←</button>
-        <button class="banner-arrow right">→</button>
+        <button class="banner-arrow left" aria-label="Previous Slide">←</button>
+        <button class="banner-arrow right" aria-label="Next Slide">→</button>
       </section>
 
       <!-- Seksjon 2: Våre mest populære produkter -->
       <section id="popular-products" class="popular-products">
         <h2>Våre mest populære produkter</h2>
         <p>Oppdag det beste av det beste</p>
-        <button class="filterButton">New Product</button>
-        <button class="filterButton">Special Price</button>
-        <button class="filterButton">Best Sellers</button>
+        <button class="filterButton" aria-label="Filter by New Product">
+          New Product
+        </button>
+        <button class="filterButton" aria-label="Filter by Special Price">
+          Special Price
+        </button>
+        <button class="filterButton" aria-label="Filter by Best Sellers">
+          Best Sellers
+        </button>
         <ul class="products-grid">
           <li class="product-card">
             <a href="product.html">
-              <img src="https://picsum.photos/200?random=1" alt="Produkt 1" />
+              <img
+                src="https://picsum.photos/200?random=1"
+                alt="Produkt 1: Beskrivelse her"
+                loading="lazy"
+              />
             </a>
             <h3>Product name</h3>
             <p class="price">kr 1999</p>
@@ -69,7 +94,11 @@
           </li>
           <li class="product-card">
             <a href="product.html">
-              <img src="https://picsum.photos/200?random=1" alt="Produkt 2" />
+              <img
+                src="https://picsum.photos/200?random=1"
+                alt="Produkt 2: Beskrivelse her"
+                loading="lazy"
+              />
             </a>
             <h3>Product name</h3>
             <p class="price">kr 1999</p>
@@ -77,7 +106,11 @@
           </li>
           <li class="product-card">
             <a href="product.html">
-              <img src="https://picsum.photos/200?random=1" alt="Produkt 3" />
+              <img
+                src="https://picsum.photos/200?random=1"
+                alt="Produkt 3: Beskrivelse her"
+                loading="lazy"
+              />
             </a>
             <h3>Product name</h3>
             <p class="price">kr 1999</p>
@@ -85,7 +118,11 @@
           </li>
           <li class="product-card">
             <a href="product.html">
-              <img src="https://picsum.photos/200?random=1" alt="Produkt 4" />
+              <img
+                src="https://picsum.photos/200?random=1"
+                alt="Produkt 4: Beskrivelse her"
+                loading="lazy"
+              />
             </a>
             <h3>Product name</h3>
             <p class="price">kr 1999</p>
@@ -93,7 +130,11 @@
           </li>
           <li class="product-card">
             <a href="product.html">
-              <img src="https://picsum.photos/200?random=1" alt="Produkt 5" />
+              <img
+                src="https://picsum.photos/200?random=1"
+                alt="Produkt 5: Beskrivelse her"
+                loading="lazy"
+              />
             </a>
             <h3>Product name</h3>
             <p class="price">kr 1999</p>
@@ -101,7 +142,11 @@
           </li>
           <li class="product-card">
             <a href="product.html">
-              <img src="https://picsum.photos/200?random=1" alt="Produkt 6" />
+              <img
+                src="https://picsum.photos/200?random=1"
+                alt="Produkt 6: Beskrivelse her"
+                loading="lazy"
+              />
             </a>
             <h3>Product name</h3>
             <p class="price">kr 1999</p>
@@ -118,35 +163,40 @@
           <li class="category-card">
             <img
               src="https://picsum.photos/400/300?random=1"
-              alt="Category 1"
+              alt="Populær kategori 1"
+              loading="lazy"
             />
             <span class="category-title">CATEGORY 1</span>
           </li>
           <li class="category-card">
             <img
               src="https://picsum.photos/400/300?random=2"
-              alt="Category 2"
+              alt="Populær kategori 2"
+              loading="lazy"
             />
             <span class="category-title">CATEGORY 2</span>
           </li>
           <li class="category-card">
             <img
               src="https://picsum.photos/400/300?random=3"
-              alt="Category 3"
+              alt="Populær kategori 3"
+              loading="lazy"
             />
             <span class="category-title">CATEGORY 3</span>
           </li>
           <li class="category-card">
             <img
               src="https://picsum.photos/400/300?random=4"
-              alt="Category 4"
+              alt="Populær kategori 4"
+              loading="lazy"
             />
             <span class="category-title">CATEGORY 4</span>
           </li>
           <li class="category-card">
             <img
               src="https://picsum.photos/400/300?random=5"
-              alt="Category 5"
+              alt="Populær kategori 5"
+              loading="lazy"
             />
             <span class="category-title">CATEGORY 5</span>
           </li>
@@ -162,6 +212,7 @@
               src="https://picsum.photos/100?random=1"
               alt="Anmelder 1"
               class="review-avatar"
+              loading="lazy"
             />
             <h3>Fantastisk produkt!</h3>
             <p class="rating">★★★☆☆</p>
@@ -180,6 +231,7 @@
               src="https://picsum.photos/100?random=2"
               alt="Anmelder 2"
               class="review-avatar"
+              loading="lazy"
             />
             <h3>Veldig fornøyd</h3>
             <p class="rating">★★★☆☆</p>
@@ -198,6 +250,7 @@
               src="https://picsum.photos/100?random=3"
               alt="Anmelder 3"
               class="review-avatar"
+              loading="lazy"
             />
             <h3>Reagerer raskt</h3>
             <p class="rating">★★★☆☆</p>
@@ -238,10 +291,30 @@
       </article>
       <article class="footer-socials">
         <h3>SOSIALE MEDIER</h3>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a><br />
-        <a href="https://www.facebook.com" target="_blank">Facebook</a><br />
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br />
-        <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Visit us on Instagram"
+          >Instagram</a
+        ><br />
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          aria-label="Visit us on Facebook"
+          >Facebook</a
+        ><br />
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="Visit us on LinkedIn"
+          >LinkedIn</a
+        ><br />
+        <a
+          href="https://www.pinterest.com"
+          target="_blank"
+          aria-label="Visit us on Pinterest"
+          >Pinterest</a
+        >
       </article>
     </footer>
   </body>

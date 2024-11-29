@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettbutikk - Hjem</title>
+    <title>Nettbutikk: Fullfør Kjøp</title>
+    <meta
+      name="description"
+      content="Fullfør kjøpet i vår kasse. Enkel og sikker prosess med flere leverings- og betalingsalternativer."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <section class="container">
         <nav class="navbar">
-          <div class="search-bar-container">
-            <form class="search-bar-wrapper">
-              <input type="text" placeholder="Søk her" class="search-bar" />
-              <button class="search-button">⌕</button>
+          <section class="search-bar-container">
+            <form class="search-bar-wrapper" aria-label="Search Form">
+              <input
+                type="text"
+                placeholder="Søk her"
+                class="search-bar"
+                aria-label="Search"
+              />
+              <button class="search-button" aria-label="Search">⌕</button>
             </form>
-          </div>
+          </section>
           <ul class="nav-links">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="#popular-products">Produkter</a></li>
@@ -24,95 +33,111 @@
             <li><a href="#popular-categories">Kategorier</a></li>
             <li><a href="#contact">Kontakt oss</a></li>
           </ul>
-          <div class="nav-icons">
-            <a href="#" class="icon">👤</a>
-            <a href="#" class="icon">♡</a>
-            <a href="checkout.html" class="icon">🛒</a>
-          </div>
+          <section class="nav-icons">
+            <a href="#" class="icon" aria-label="User Profile">👤</a>
+            <a href="#" class="icon" aria-label="Wishlist">♡</a>
+            <a href="checkout.html" class="icon" aria-label="Shopping Cart"
+              >🛒</a
+            >
+          </section>
         </nav>
-      </div>
+      </section>
     </header>
 
-    <a href="index.html" class="tilbake-link">⬅ Fortsett og handle</a>
+    <a href="index.html" class="tilbake-link" aria-label="Continue Shopping"
+      >⬅ Fortsett og handle</a
+    >
 
     <main>
-      <div class="container">
+      <section class="container">
         <h1 class="cart-title">Kasse</h1>
 
         <!-- Section 1: Shoppingbagen Din -->
         <section id="shoppingbag" class="shoppingbag">
           <h2>1. SHOPPINGBAGEN DIN</h2>
           <article class="produktkort">
-            <img src="https://pin.it/xE8LJtLDk" alt="Produkt 1" />
-            <div class="info">
+            <img
+              src="https://picsum.photos/150?random=1"
+              alt="Produkt 1"
+              loading="lazy"
+            />
+            <article class="info">
               <h3>PRODUCT NAME</h3>
               <p>Kr 1999</p>
               <p>Farge: beige</p>
-              <div>
-                <label for="size">Størrelse</label>
-                <select id="size">
+              <section>
+                <label for="size-1">Størrelse</label>
+                <select id="size-1">
                   <option>XS</option>
                   <option>S</option>
                   <option>M</option>
                   <option>L</option>
                   <option>XL</option>
                 </select>
-                <label for="quantity">Antall</label>
-                <input type="number" id="quantity" value="1" min="1" />
-              </div>
-            </div>
-            <div class="actions">
-              <span>♡</span>
-              <span>🗑️</span>
-            </div>
+                <label for="quantity-1">Antall</label>
+                <input type="number" id="quantity-1" value="1" min="1" />
+              </section>
+            </article>
+            <footer class="actions">
+              <span aria-label="Add to Wishlist">♡</span>
+              <span aria-label="Remove Item">🗑️</span>
+            </footer>
           </article>
           <article class="produktkort">
-            <img src="https://picsum.photos/150?random=1" alt="Produkt 1" />
-            <div class="info">
+            <img
+              src="https://picsum.photos/150?random=2"
+              alt="Produkt 2"
+              loading="lazy"
+            />
+            <article class="info">
               <h3>PRODUCT NAME</h3>
               <p>Kr 1999</p>
               <p>Farge: beige</p>
-              <div>
-                <label for="size">Størrelse</label>
-                <select id="size">
+              <section>
+                <label for="size-2">Størrelse</label>
+                <select id="size-2">
                   <option>XS</option>
                   <option>S</option>
                   <option>M</option>
                   <option>L</option>
                   <option>XL</option>
                 </select>
-                <label for="quantity">Antall</label>
-                <input type="number" id="quantity" value="1" min="1" />
-              </div>
-            </div>
-            <div class="actions">
-              <span>♡</span>
-              <span>🗑️</span>
-            </div>
+                <label for="quantity-2">Antall</label>
+                <input type="number" id="quantity-2" value="1" min="1" />
+              </section>
+            </article>
+            <footer class="actions">
+              <span aria-label="Add to Wishlist">♡</span>
+              <span aria-label="Remove Item">🗑️</span>
+            </footer>
           </article>
           <article class="produktkort">
-            <img src="https://picsum.photos/150?random=1" alt="Produkt 1" />
-            <div class="info">
+            <img
+              src="https://picsum.photos/150?random=3"
+              alt="Produkt 3"
+              loading="lazy"
+            />
+            <article class="info">
               <h3>PRODUCT NAME</h3>
               <p>Kr 1999</p>
               <p>Farge: beige</p>
-              <div>
-                <label for="size">Størrelse</label>
-                <select id="size">
+              <section>
+                <label for="size-3">Størrelse</label>
+                <select id="size-3">
                   <option>XS</option>
                   <option>S</option>
                   <option>M</option>
                   <option>L</option>
                   <option>XL</option>
                 </select>
-                <label for="quantity">Antall</label>
-                <input type="number" id="quantity" value="1" min="1" />
-              </div>
-            </div>
-            <div class="actions">
-              <span>♡</span>
-              <span>🗑️</span>
-            </div>
+                <label for="quantity-3">Antall</label>
+                <input type="number" id="quantity-3" value="1" min="1" />
+              </section>
+            </article>
+            <footer class="actions">
+              <span aria-label="Add to Wishlist">♡</span>
+              <span aria-label="Remove Item">🗑️</span>
+            </footer>
           </article>
         </section>
 
@@ -121,7 +146,6 @@
           <h2>2. DINE OPPLYSNINGER</h2>
           <form>
             <h4>Leveringsadresse</h4>
-            <!-- Name Row -->
             <fieldset class="form-row name-row">
               <label for="fornavn"
                 >Fornavn
@@ -137,8 +161,6 @@
                 />
               </label>
             </fieldset>
-
-            <!-- Gateadresse -->
             <label for="gateadresse"
               >Gateadresse
               <input
@@ -148,8 +170,6 @@
                 required
               />
             </label>
-
-            <!-- Address Row -->
             <fieldset class="form-row address-row">
               <label for="postnummer"
                 >Postnummer
@@ -170,8 +190,6 @@
                 />
               </label>
             </fieldset>
-
-            <!-- Email and Phone -->
             <label for="email"
               >E-post
               <input
@@ -190,8 +208,6 @@
                 required
               />
             </label>
-
-            <!-- Buttons -->
             <button type="submit" class="save-button">Lagre</button>
             <a href="#" class="cancel-button">Avbryt</a>
           </form>
@@ -208,7 +224,7 @@
                 value="express-hjemlevering"
               />
               Express Hjemlevering <span>(59 kr)</span>
-              <p>3-4 Virkedager</p>
+              <span class="delivery-info">3-4 Virkedager</span>
             </label>
             <label>
               <input
@@ -217,7 +233,7 @@
                 value="express-utleveringssted"
               />
               Express Pakke til utleveringssted <span>(59 kr)</span>
-              <p>1-3 Virkedager</p>
+              <span class="delivery-info">1-3 Virkedager</span>
             </label>
             <label>
               <input
@@ -227,7 +243,7 @@
                 checked
               />
               Standard Hjemlevering <span>(Gratis)</span>
-              <p>5-8 Virkedager</p>
+              <span class="delivery-info">5-8 Virkedager</span>
             </label>
           </form>
         </section>
@@ -237,7 +253,6 @@
           <h2>4. BETALING</h2>
           <form>
             <h4>BETAL MED KORT</h4>
-
             <label for="kortnummer">Kortnummer</label>
             <input
               type="text"
@@ -245,35 +260,28 @@
               placeholder="3423 42** **** 4435"
               required
             />
-
-            <div class="row">
-              <div class="column">
-                <label for="utlop">Utløpsdato</label>
+            <fieldset class="row">
+              <label for="utlop"
+                >Utløpsdato
                 <input
                   type="text"
                   id="utlop"
                   placeholder="mm / dd / yyyy"
                   required
                 />
-              </div>
-              <div class="column">
-                <label for="cvc">CVC/CVV</label>
+              </label>
+              <label for="cvc"
+                >CVC/CVV
                 <input type="text" id="cvc" placeholder="CVC/CVV" required />
-              </div>
-            </div>
-
+              </label>
+            </fieldset>
             <p>Å betale inkl. mva.</p>
             <h3>1 199 kr</h3>
-
             <button type="submit" class="checkout-button">Fullfør kjøp</button>
-
             <p>
               Du bekrefter herved at opplysningene og dokumentene du har oppgitt
-              er korrekte og fullstendige. Leverandøren forbeholder seg retten
-              til å heve eller avslutte avtaleforholdet dersom det foreligger
-              uriktige eller ufullstendige opplysninger.
+              er korrekte og fullstendige.
             </p>
-
             <label class="checkbox-label">
               <input type="checkbox" />
               Ja takk! Send nyhetsbrev til meg.
@@ -284,7 +292,7 @@
             </label>
           </form>
         </section>
-      </div>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -309,10 +317,30 @@
       </article>
       <article class="footer-socials">
         <h3>SOSIALE MEDIER</h3>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a><br />
-        <a href="https://www.facebook.com" target="_blank">Facebook</a><br />
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br />
-        <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Visit us on Instagram"
+          >Instagram</a
+        ><br />
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          aria-label="Visit us on Facebook"
+          >Facebook</a
+        ><br />
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="Visit us on LinkedIn"
+          >LinkedIn</a
+        ><br />
+        <a
+          href="https://www.pinterest.com"
+          target="_blank"
+          aria-label="Visit us on Pinterest"
+          >Pinterest</a
+        >
       </article>
     </footer>
   </body>

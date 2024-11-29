@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nettbutikk - Hjem</title>
+    <title>Nettbutikk: Produktdetaljer</title>
+    <meta
+      name="description"
+      content="Se detaljer om vårt produkt, tilgjengelig i flere størrelser og farger. Utforsk relaterte produkter og anmeldelser."
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container">
+      <section class="container">
         <nav class="navbar">
-          <div class="search-bar-container">
-            <form class="search-bar-wrapper">
-              <input type="text" placeholder="søk her" class="search-bar" />
-              <button class="search-button">⌕</button>
+          <section class="search-bar-container">
+            <form class="search-bar-wrapper" aria-label="Search Form">
+              <input
+                type="text"
+                placeholder="Søk her"
+                class="search-bar"
+                aria-label="Search"
+              />
+              <button class="search-button" aria-label="Search">⌕</button>
             </form>
-          </div>
+          </section>
           <ul class="nav-links">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="#popular-products">Produkter</a></li>
@@ -24,44 +33,50 @@
             <li><a href="#popular-categories">Kategorier</a></li>
             <li><a href="#contact">Kontakt oss</a></li>
           </ul>
-          <div class="nav-icons">
-            <a href="#" class="icon">👤</a>
-            <a href="#" class="icon">♡</a>
-            <a href="checkout.html" class="icon">🛒</a>
-          </div>
+          <section class="nav-icons">
+            <a href="#" class="icon" aria-label="User Profile">👤</a>
+            <a href="#" class="icon" aria-label="Wishlist">♡</a>
+            <a href="checkout.html" class="icon" aria-label="Shopping Cart"
+              >🛒</a
+            >
+          </section>
         </nav>
-      </div>
+      </section>
     </header>
 
     <main>
       <section class="product-section">
         <!-- Breadcrumb -->
-        <nav class="breadcrumb">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Hjem</a> > <a href="#">Kategori</a> >
-          <span>Produktnavn</span>
+          <span aria-current="page">Produktnavn</span>
         </nav>
 
         <!-- Product Layout -->
-        <div class="product-container">
+        <section class="product-container">
           <!-- Product Gallery -->
-          <div class="product-gallery">
-            <div class="thumbnails">
-              <img src="image1.jpg" alt="Thumbnail 1" />
-              <img src="image1.jpg" alt="Thumbnail 2" />
-              <img src="image1.jpg" alt="Thumbnail 3" />
-            </div>
-            <div class="main-image">
-              <img src="image1.jpg" alt="Main Product Image" />
-            </div>
-          </div>
+          <section class="product-gallery">
+            <section class="thumbnails">
+              <img src="image1.jpg" alt="Picture of dress" />
+              <img src="image1.jpg" alt="Picture of dress" />
+              <img src="image1.jpg" alt="Picture of dress" />
+            </section>
+            <section class="main-image">
+              <img
+                src="image1.jpg"
+                alt="Main Product Image showing the product"
+              />
+            </section>
+          </section>
 
           <!-- Product Details -->
-          <div class="product-details">
+          <article class="product-details">
             <h1>Produktnavn</h1>
             <h2>MERKENAVN</h2>
             <p class="price">5 195 kr inkl. mva.</p>
             <p class="color">Farge: <span>Beige</span></p>
-            <select>
+            <label for="size-selection">Velg størrelse:</label>
+            <select id="size-selection" aria-label="Choose Size">
               <option>Velg størrelse</option>
               <option>XXS</option>
               <option>XS</option>
@@ -71,11 +86,13 @@
               <option>XL</option>
               <option>XXL</option>
             </select>
-            <div class="button-container">
-              <button class="add-to-cart">Legg i handlekurv</button>
-              <button class="wishlist">♡</button>
-            </div>
-            <div class="product-tabs">
+            <section class="button-container">
+              <button class="add-to-cart" aria-label="Add to Cart">
+                Legg i handlekurv
+              </button>
+              <button class="wishlist" aria-label="Add to Wishlist">♡</button>
+            </section>
+            <section class="product-tabs">
               <details>
                 <summary>Materiale og vedlikehold</summary>
                 <ul>
@@ -151,69 +168,55 @@
                       <td>XL</td>
                       <td>96</td>
                       <td>80</td>
-                      <td>103</td>
+                      <td>104</td>
                     </tr>
                     <tr>
                       <td>44</td>
                       <td>XXL</td>
                       <td>100</td>
                       <td>85</td>
-                      <td>106</td>
+                      <td>109</td>
                     </tr>
                     <tr>
                       <td>46</td>
                       <td>3XL</td>
                       <td>104</td>
                       <td>90</td>
-                      <td>109</td>
+                      <td>114</td>
                     </tr>
                     <tr>
                       <td>48</td>
                       <td>4XL</td>
                       <td>110</td>
-                      <td>96.5</td>
-                      <td>114</td>
+                      <td>96</td>
+                      <td>119</td>
                     </tr>
                     <tr>
                       <td>50</td>
                       <td>5XL</td>
                       <td>116</td>
                       <td>103</td>
-                      <td>119</td>
+                      <td>124</td>
                     </tr>
                     <tr>
                       <td>52</td>
                       <td>6XL</td>
                       <td>122</td>
-                      <td>109.5</td>
-                      <td>124</td>
+                      <td>110</td>
+                      <td>129</td>
                     </tr>
                     <tr>
                       <td>54</td>
                       <td>7XL</td>
                       <td>128</td>
                       <td>116</td>
-                      <td>130</td>
+                      <td>135</td>
                     </tr>
                     <tr>
                       <td>56</td>
                       <td>8XL</td>
-                      <td>134</td>
-                      <td>122.5</td>
-                      <td>136</td>
-                    </tr>
-                    <tr>
-                      <td>58</td>
-                      <td>9XL</td>
                       <td>140</td>
-                      <td>129</td>
-                      <td>142</td>
-                    </tr>
-                    <tr>
-                      <td>60</td>
-                      <td>10XL</td>
-                      <td>146</td>
-                      <td>135.5</td>
+                      <td>125</td>
                       <td>148</td>
                     </tr>
                   </tbody>
@@ -232,11 +235,13 @@
                   </p>
                 </article>
               </details>
-            </div>
-          </div>
-        </div>
+            </section>
+          </article>
+        </section>
       </section>
-      <a href="#" class="view-more-link">Se flere lignende produkter →</a>
+      <a href="#" class="view-more-link" aria-label="View more similar products"
+        >Se flere lignende produkter →</a
+      >
       <section class="related-products">
         <h2>Lignende produkter</h2>
         <article class="product-card">
@@ -304,10 +309,30 @@
       </article>
       <article class="footer-socials">
         <h3>SOSIALE MEDIER</h3>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a><br />
-        <a href="https://www.facebook.com" target="_blank">Facebook</a><br />
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br />
-        <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Visit us on Instagram"
+          >Instagram</a
+        ><br />
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          aria-label="Visit us on Facebook"
+          >Facebook</a
+        ><br />
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          aria-label="Visit us on LinkedIn"
+          >LinkedIn</a
+        ><br />
+        <a
+          href="https://www.pinterest.com"
+          target="_blank"
+          aria-label="Visit us on Pinterest"
+          >Pinterest</a
+        >
       </article>
     </footer>
   </body>
