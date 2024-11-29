@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nettbutikk - Hjem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="search-bar-container">
+            <form class="search-bar-wrapper">
+              <input type="text" placeholder="søk her" class="search-bar" />
+              <button class="search-button">⌕</button>
+            </form>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#popular-products">Produkter</a></li>
+            <li class="nav-logo"><a href="index.html">Logo</a></li>
+            <li><a href="#popular-categories">Kategorier</a></li>
+            <li><a href="#contact">Kontakt oss</a></li>
+          </ul>
+          <div class="nav-icons">
+            <a href="#" class="icon">👤</a>
+            <a href="#" class="icon">♡</a>
+            <a href="checkout.html" class="icon">🛒</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="product-section">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+          <a href="index.html">Hjem</a> > <a href="#">Kategori</a> >
+          <span>Produktnavn</span>
+        </nav>
+
+        <!-- Product Layout -->
+        <div class="product-container">
+          <!-- Product Gallery -->
+          <div class="product-gallery">
+            <div class="thumbnails">
+              <img src="image1.jpg" alt="Thumbnail 1" />
+              <img src="image1.jpg" alt="Thumbnail 2" />
+              <img src="image1.jpg" alt="Thumbnail 3" />
+            </div>
+            <div class="main-image">
+              <img src="image1.jpg" alt="Main Product Image" />
+            </div>
+          </div>
+
+          <!-- Product Details -->
+          <div class="product-details">
+            <h1>Produktnavn</h1>
+            <h2>MERKENAVN</h2>
+            <p class="price">5 195 kr inkl. mva.</p>
+            <p class="color">Farge: <span>Beige</span></p>
+            <select>
+              <option>Velg størrelse</option>
+              <option>XXS</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+            <div class="button-container">
+              <button class="add-to-cart">Legg i handlekurv</button>
+              <button class="wishlist">♡</button>
+            </div>
+            <div class="product-tabs">
+              <details>
+                <summary>Materiale og vedlikehold</summary>
+                <ul>
+                  <li>Overmateriale: 95% viskose, 5% elastan</li>
+                  <li>Materiale ermer: 100% polyester</li>
+                  <li>Materiale: Jersey</li>
+                </ul>
+              </details>
+              <details>
+                <summary>Produktdetaljer</summary>
+                <p>
+                  Epcot is a theme park at Walt Disney World Resort featuring
+                  exciting attractions, internatioanl pavillions, award-winning
+                  fireworks and seasonal special events.
+                </p>
+              </details>
+              <details>
+                <summary>Størrelsestabell</summary>
+                <p>
+                  Sjekk hvordan din vanlige størrelse konverterer til andre
+                  størrelser i vår størrelsesguide. Husk at dette kun er en
+                  generell guide og at størrelsene kan variere i forhold til
+                  merke og modell.
+                </p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>EU</th>
+                      <th>INT</th>
+                      <th>BRYSTVIDDE</th>
+                      <th>LIVVIDDE</th>
+                      <th>HOFTEMÅL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>32</td>
+                      <td>XXS</td>
+                      <td>76</td>
+                      <td>63</td>
+                      <td>85</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>XS</td>
+                      <td>80</td>
+                      <td>66</td>
+                      <td>89</td>
+                    </tr>
+                    <tr>
+                      <td>36</td>
+                      <td>S</td>
+                      <td>84</td>
+                      <td>69</td>
+                      <td>93</td>
+                    </tr>
+                    <tr>
+                      <td>38</td>
+                      <td>M</td>
+                      <td>88</td>
+                      <td>72</td>
+                      <td>97</td>
+                    </tr>
+                    <tr>
+                      <td>40</td>
+                      <td>L</td>
+                      <td>92</td>
+                      <td>76</td>
+                      <td>100</td>
+                    </tr>
+                    <tr>
+                      <td>42</td>
+                      <td>XL</td>
+                      <td>96</td>
+                      <td>80</td>
+                      <td>103</td>
+                    </tr>
+                    <tr>
+                      <td>44</td>
+                      <td>XXL</td>
+                      <td>100</td>
+                      <td>85</td>
+                      <td>106</td>
+                    </tr>
+                    <tr>
+                      <td>46</td>
+                      <td>3XL</td>
+                      <td>104</td>
+                      <td>90</td>
+                      <td>109</td>
+                    </tr>
+                    <tr>
+                      <td>48</td>
+                      <td>4XL</td>
+                      <td>110</td>
+                      <td>96.5</td>
+                      <td>114</td>
+                    </tr>
+                    <tr>
+                      <td>50</td>
+                      <td>5XL</td>
+                      <td>116</td>
+                      <td>103</td>
+                      <td>119</td>
+                    </tr>
+                    <tr>
+                      <td>52</td>
+                      <td>6XL</td>
+                      <td>122</td>
+                      <td>109.5</td>
+                      <td>124</td>
+                    </tr>
+                    <tr>
+                      <td>54</td>
+                      <td>7XL</td>
+                      <td>128</td>
+                      <td>116</td>
+                      <td>130</td>
+                    </tr>
+                    <tr>
+                      <td>56</td>
+                      <td>8XL</td>
+                      <td>134</td>
+                      <td>122.5</td>
+                      <td>136</td>
+                    </tr>
+                    <tr>
+                      <td>58</td>
+                      <td>9XL</td>
+                      <td>140</td>
+                      <td>129</td>
+                      <td>142</td>
+                    </tr>
+                    <tr>
+                      <td>60</td>
+                      <td>10XL</td>
+                      <td>146</td>
+                      <td>135.5</td>
+                      <td>148</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </details>
+              <details>
+                <summary>Anmeldelser</summary>
+                <article class="review-summary">
+                  <p>Mia Pettersen</p>
+                  <p>2024-10-02</p>
+                  <p class="rating">★★★★☆</p>
+                  <p>
+                    Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit Lorem ipsum trio puro qala mio da rueo
+                    lorem ipsu quo minus id quod.
+                  </p>
+                </article>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a href="#" class="view-more-link">Se flere lignende produkter →</a>
+      <section class="related-products">
+        <h2>Lignende produkter</h2>
+        <article class="product-card">
+          <img
+            src="https://picsum.photos/200/200?random=1"
+            alt="Product 1"
+            class="product-image"
+          />
+          <h3 class="product-name">Product name</h3>
+          <p class="product-price">Kr 1999</p>
+          <p class="product-rating">★★★★☆ 842 Reviews</p>
+        </article>
+        <article class="product-card">
+          <img
+            src="https://picsum.photos/200/200?random=2"
+            alt="Product 2"
+            class="product-image"
+          />
+          <h3 class="product-name">Product name</h3>
+          <p class="product-price">Kr 1999</p>
+          <p class="product-rating">★★★★☆ 842 Reviews</p>
+        </article>
+        <article class="product-card">
+          <img
+            src="https://picsum.photos/200/200?random=3"
+            alt="Product 3"
+            class="product-image"
+          />
+          <h3 class="product-name">Product name</h3>
+          <p class="product-price">Kr 1999</p>
+          <p class="product-rating">★★★★☆ 842 Reviews</p>
+        </article>
+        <article class="product-card">
+          <img
+            src="https://picsum.photos/200/200?random=4"
+            alt="Product 4"
+            class="product-image"
+          />
+          <h3 class="product-name">Product name</h3>
+          <p class="product-price">Kr 1999</p>
+          <p class="product-rating">★★★★☆ 842 Reviews</p>
+        </article>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <article class="footer-logo">
+        <h3>Logo</h3>
+        <p>Din virksomhet, vår lidenskap.</p>
+      </article>
+      <article class="footer-contact">
+        <h3>KONTAKT</h3>
+        <p><span>Adresse:</span> Eksempelgata 1, 1234 Oslo</p>
+        <p><span>Telefon:</span> 123 45 678</p>
+        <p><span>E-post:</span> kontakt@nettbutikk.no</p>
+        <p><span>Åpningstider:</span> Stenger 15:00</p>
+      </article>
+      <article class="footer-snarveier">
+        <h3>SNARVEIER</h3>
+        <a href="index.html">Hjem</a><br />
+        <a href="#popular-products">Produkter</a><br />
+        <a href="#popular-categories">Kategorier</a><br />
+        <a href="#contact">Kontakt oss</a>
+      </article>
+      <article class="footer-socials">
+        <h3>SOSIALE MEDIER</h3>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a><br />
+        <a href="https://www.facebook.com" target="_blank">Facebook</a><br />
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br />
+        <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+      </article>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nettbutikk - Hjem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="search-bar-container">
+            <form class="search-bar-wrapper">
+              <input type="text" placeholder="Søk her" class="search-bar" />
+              <button class="search-button">⌕</button>
+            </form>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#popular-products">Produkter</a></li>
+            <li class="nav-logo"><a href="index.html">Logo</a></li>
+            <li><a href="#popular-categories">Kategorier</a></li>
+            <li><a href="#contact">Kontakt oss</a></li>
+          </ul>
+          <div class="nav-icons">
+            <a href="#" class="icon">👤</a>
+            <a href="#" class="icon">♡</a>
+            <a href="checkout.html" class="icon">🛒</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <a href="index.html" class="tilbake-link">⬅ Fortsett og handle</a>
+
+    <main>
+      <div class="container">
+        <h1 class="cart-title">Kasse</h1>
+
+        <!-- Section 1: Shoppingbagen Din -->
+        <section id="shoppingbag" class="shoppingbag">
+          <h2>1. SHOPPINGBAGEN DIN</h2>
+          <article class="produktkort">
+            <img src="https://pin.it/xE8LJtLDk" alt="Produkt 1" />
+            <div class="info">
+              <h3>PRODUCT NAME</h3>
+              <p>Kr 1999</p>
+              <p>Farge: beige</p>
+              <div>
+                <label for="size">Størrelse</label>
+                <select id="size">
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+                <label for="quantity">Antall</label>
+                <input type="number" id="quantity" value="1" min="1" />
+              </div>
+            </div>
+            <div class="actions">
+              <span>♡</span>
+              <span>🗑️</span>
+            </div>
+          </article>
+          <article class="produktkort">
+            <img src="https://picsum.photos/150?random=1" alt="Produkt 1" />
+            <div class="info">
+              <h3>PRODUCT NAME</h3>
+              <p>Kr 1999</p>
+              <p>Farge: beige</p>
+              <div>
+                <label for="size">Størrelse</label>
+                <select id="size">
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+                <label for="quantity">Antall</label>
+                <input type="number" id="quantity" value="1" min="1" />
+              </div>
+            </div>
+            <div class="actions">
+              <span>♡</span>
+              <span>🗑️</span>
+            </div>
+          </article>
+          <article class="produktkort">
+            <img src="https://picsum.photos/150?random=1" alt="Produkt 1" />
+            <div class="info">
+              <h3>PRODUCT NAME</h3>
+              <p>Kr 1999</p>
+              <p>Farge: beige</p>
+              <div>
+                <label for="size">Størrelse</label>
+                <select id="size">
+                  <option>XS</option>
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                </select>
+                <label for="quantity">Antall</label>
+                <input type="number" id="quantity" value="1" min="1" />
+              </div>
+            </div>
+            <div class="actions">
+              <span>♡</span>
+              <span>🗑️</span>
+            </div>
+          </article>
+        </section>
+
+        <!-- Section 2: Dine Opplysninger -->
+        <section id="dine-opplysninger" class="dine-opplysninger">
+          <h2>2. DINE OPPLYSNINGER</h2>
+          <form>
+            <h4>Leveringsadresse</h4>
+            <!-- Name Row -->
+            <fieldset class="form-row name-row">
+              <label for="fornavn"
+                >Fornavn
+                <input type="text" id="fornavn" placeholder="Nora*" required />
+              </label>
+              <label for="etternavn"
+                >Etternavn
+                <input
+                  type="text"
+                  id="etternavn"
+                  placeholder="Nordman*"
+                  required
+                />
+              </label>
+            </fieldset>
+
+            <!-- Gateadresse -->
+            <label for="gateadresse"
+              >Gateadresse
+              <input
+                type="text"
+                id="gateadresse"
+                placeholder="BRA veien 4*"
+                required
+              />
+            </label>
+
+            <!-- Address Row -->
+            <fieldset class="form-row address-row">
+              <label for="postnummer"
+                >Postnummer
+                <input
+                  type="text"
+                  id="postnummer"
+                  placeholder="1752*"
+                  required
+                />
+              </label>
+              <label for="poststed"
+                >Poststed
+                <input
+                  type="text"
+                  id="poststed"
+                  placeholder="Halden*"
+                  required
+                />
+              </label>
+            </fieldset>
+
+            <!-- Email and Phone -->
+            <label for="email"
+              >E-post
+              <input
+                type="email"
+                id="email"
+                placeholder="Noranordman@hiof.no.*"
+                required
+              />
+            </label>
+            <label for="telefon"
+              >Telefon
+              <input
+                type="tel"
+                id="telefon"
+                placeholder="+47 49***018"
+                required
+              />
+            </label>
+
+            <!-- Buttons -->
+            <button type="submit" class="save-button">Lagre</button>
+            <a href="#" class="cancel-button">Avbryt</a>
+          </form>
+        </section>
+
+        <!-- Section 3: Levering -->
+        <section id="levering" class="levering">
+          <h2>3. LEVERING</h2>
+          <form>
+            <label>
+              <input
+                type="radio"
+                name="levering"
+                value="express-hjemlevering"
+              />
+              Express Hjemlevering <span>(59 kr)</span>
+              <p>3-4 Virkedager</p>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="levering"
+                value="express-utleveringssted"
+              />
+              Express Pakke til utleveringssted <span>(59 kr)</span>
+              <p>1-3 Virkedager</p>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="levering"
+                value="standard-hjemlevering"
+                checked
+              />
+              Standard Hjemlevering <span>(Gratis)</span>
+              <p>5-8 Virkedager</p>
+            </label>
+          </form>
+        </section>
+
+        <!-- Section 4: Betaling -->
+        <section id="betaling" class="betaling">
+          <h2>4. BETALING</h2>
+          <form>
+            <h4>BETAL MED KORT</h4>
+
+            <label for="kortnummer">Kortnummer</label>
+            <input
+              type="text"
+              id="kortnummer"
+              placeholder="3423 42** **** 4435"
+              required
+            />
+
+            <div class="row">
+              <div class="column">
+                <label for="utlop">Utløpsdato</label>
+                <input
+                  type="text"
+                  id="utlop"
+                  placeholder="mm / dd / yyyy"
+                  required
+                />
+              </div>
+              <div class="column">
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" placeholder="CVC/CVV" required />
+              </div>
+            </div>
+
+            <p>Å betale inkl. mva.</p>
+            <h3>1 199 kr</h3>
+
+            <button type="submit" class="checkout-button">Fullfør kjøp</button>
+
+            <p>
+              Du bekrefter herved at opplysningene og dokumentene du har oppgitt
+              er korrekte og fullstendige. Leverandøren forbeholder seg retten
+              til å heve eller avslutte avtaleforholdet dersom det foreligger
+              uriktige eller ufullstendige opplysninger.
+            </p>
+
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              Ja takk! Send nyhetsbrev til meg.
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+            </label>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <article class="footer-logo">
+        <h3>Logo</h3>
+        <p>Din virksomhet, vår lidenskap.</p>
+      </article>
+      <article class="footer-contact">
+        <h3>KONTAKT</h3>
+        <p><span>Adresse:</span> Eksempelgata 1, 1234 Oslo</p>
+        <p><span>Telefon:</span> 123 45 678</p>
+        <p><span>E-post:</span> kontakt@nettbutikk.no</p>
+        <p><span>Åpningstider:</span> Stenger 15:00</p>
+      </article>
+      <article class="footer-snarveier">
+        <h3>SNARVEIER</h3>
+        <a href="index.html">Hjem</a><br />
+        <a href="#popular-products">Produkter</a><br />
+        <a href="#popular-categories">Kategorier</a><br />
+        <a href="#contact">Kontakt oss</a>
+      </article>
+      <article class="footer-socials">
+        <h3>SOSIALE MEDIER</h3>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a><br />
+        <a href="https://www.facebook.com" target="_blank">Facebook</a><br />
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a><br />
+        <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+      </article>
+    </footer>
+  </body>
+</html>
